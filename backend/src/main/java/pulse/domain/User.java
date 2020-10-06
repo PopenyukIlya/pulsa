@@ -22,6 +22,12 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
+    public User(String username, String password) {
+    this.username=username;
+    this.password=password;
+    }
+
+
     public Long getId() {
         return id;
     }

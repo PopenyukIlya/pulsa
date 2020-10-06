@@ -24,6 +24,11 @@ public class MainController {
 
         return "main";
     }
+    @GetMapping("/pulse")
+    public String pulse(@RequestParam(required = false, defaultValue = "") String filter, Model model) {
+
+        return "pulse";
+    }
 
     @PostMapping("/main")
     public String add(

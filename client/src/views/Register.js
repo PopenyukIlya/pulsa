@@ -1,17 +1,41 @@
 import React, {useState} from 'react';
 import '../App.css';
-import {Button, Form,Card} from 'react-bootstrap';
+import {Button, Form,Card,Alert} from 'react-bootstrap';
 import axios from 'axios';
 
 function Register() {
     const [username,setUsername]=useState('');
     const [password,setPassword]=useState('');
-    function doRegister(){
-        axios.post(")
+    const [error,setError]=useState('');
 
+    function doRegister(){
+        if (username === '' || password === '') {
+            setError('Fill in all the fields.');
+        } else {
+            axios.post("http://localhost:8080/api/auth/signup",
+                {username,password},
+                {withCredentials:true})
+                .then(result => {
+                    if (result.status === 200 && result.data.success) {
+                        setUsername(username);
+                    }else  {
+                        setError(result.data.msg);
+                        console.log(result.data)
+                    }
+                }).catch(e => {
+                    setError('Some error');
+                    console.log(e)
+                });
+        }
     }
+
+    if (username !== '') {
+        return <Redirect to="/" />;
+    }
+
     return (
         <div className="App">
+            {error.length !== 0 && <Alert variant={'danger'}>{error}</Alert>}
            <Card className="w-50 text-center mx-auto mt-4 p-3">
                <Form>
                 <Form.Group controlId="formBasicEmail">

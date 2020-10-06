@@ -1,9 +1,0 @@
-pulse\repos\UserRepo.class
-pulse\config\WebSecurityConfig.class
-pulse\config\MvcConfig.class
-pulse\domain\User.class
-pulse\Application.class
-pulse\controller\MainController.class
-pulse\domain\Role.class
-pulse\controller\RegistrationController.class
-pulse\service\UserSevice.class

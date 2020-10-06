@@ -2,19 +2,368 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_2_3_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_3_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_1_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/MyCORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/SpringDataRestCustomization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/RestRegistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/TestRestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/response/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/security/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/security/AuthProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/META-INF/pulse.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/RestRegistration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/TestRestApi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/SignupRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/payload/response/MessageResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/security/AuthEntryPointJwt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/security/AuthProviderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pulse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pulse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/repos/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/META-INF/pulse.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/views/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/views/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/client/src/views/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/domain/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/repos/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserSevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/main.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/src/main/resources/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/pulse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/main.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/src/main/resources/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/pulse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/main.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/src/main/resources/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/static/1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/static/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/classes/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/pulse-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/target/pulse-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/main.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/classes/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/pulse-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/target/pulse-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/greeting.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/main.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/parts/common.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/parts/login.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/classes/templates/registration.ftlh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/pulse-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/target/pulse-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/pulse-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/pulse-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pulse: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pulse: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1iSMDLIsay2A8DTeRJyqStmZKQt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,13 +373,47 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\popen\Desktop\pulse\backend\src\main\java\pulse\payload\request" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pulse.security" />
+      <recent name="pulse.payload.response" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pulse.security" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pulse" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pulse.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -43,17 +426,83 @@
       <option name="presentableId" value="Default" />
       <updated>1601896419283</updated>
       <workItem from="1601896430191" duration="5000" />
-      <workItem from="1601896448364" duration="364000" />
+      <workItem from="1601896448364" duration="3737000" />
+      <workItem from="1601915397924" duration="678000" />
+      <workItem from="1601926454908" duration="854000" />
+      <workItem from="1601928180462" duration="487000" />
+      <workItem from="1601934071608" duration="890000" />
+      <workItem from="1601968640852" duration="11000" />
+      <workItem from="1601985538933" duration="2148000" />
+      <workItem from="1601990724098" duration="14966000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/backend" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="-918" key="SettingsEditor" timestamp="1601896802939">
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601985663817">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601985663817" />
+    <state x="765" y="-851" key="#com.intellij.ide.util.MemberChooser" timestamp="1602002571285">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="765" y="-851" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602002571285" />
+    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1601927968711">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="740" y="-806" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1601897644908" />
+    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601927968711" />
+    <state width="856" height="302" key="GridCell.Tab.0.bottom" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.0.center" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.0.left" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.0.right" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.1.bottom" timestamp="1602008759010">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759010" />
+    <state width="1493" height="201" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018209" />
+    <state width="856" height="302" key="GridCell.Tab.1.center" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.1.left" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018208" />
+    <state width="856" height="302" key="GridCell.Tab.1.right" timestamp="1602008759009">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="856" height="302" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602008759009" />
+    <state width="1493" height="201" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601986018209" />
+    <state x="369" y="109" key="SettingsEditor" timestamp="1601927765262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
     <state x="461" y="-918" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1601896802939" />
+    <state x="369" y="109" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601927765262" />
   </component>
 </project>
