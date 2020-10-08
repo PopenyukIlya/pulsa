@@ -7,6 +7,7 @@ function Register() {
     const [username,setUsername]=useState('');
     const [password,setPassword]=useState('');
     const [error,setError]=useState('');
+    const [congratulations,setCongratulations]=useState('');
 
     function doRegister(){
         if (username === '' || password === '') {
@@ -18,6 +19,7 @@ function Register() {
                 .then(result => {
                     if (result.status === 200 && result.data.success) {
                         setUsername(username);
+                        setCongratulations('Congratulations')
                     }else  {
                         setError(result.data.msg);
                         console.log(result.data)
@@ -29,17 +31,14 @@ function Register() {
         }
     }
 
-    if (username !== '') {
-        return <Redirect to="/" />;
-    }
-
     return (
         <div className="App">
             {error.length !== 0 && <Alert variant={'danger'}>{error}</Alert>}
+            {congratulations.length !== 0 && <Alert variant={'success'}>{congratulations}</Alert>}
            <Card className="w-50 text-center mx-auto mt-4 p-3">
                <Form>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label>Username</Form.Label>
                     <Form.Control type="text"
                                   placeholder="Username"
                                   value={username}
@@ -55,7 +54,7 @@ function Register() {
                     onChange={e=>{setPassword(e.target.value)}}/>
                 </Form.Group>
                 <Button size="lg" variant="primary" onClick={doRegister}>
-                    Register
+                    Sign up
                 </Button>
             </Form>
            </Card>

@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import pulse.domain.Role;
 import pulse.domain.User;
 import pulse.repos.UserRepo;
@@ -23,15 +24,15 @@ public class UserService implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
 
     @Override
+    @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepo.findByUsername(username);
+       User user=userRepo.findByUsername(username).orElseThrow(()
+               ->new UsernameNotFoundException("User Not Found with username: " + username));
+return user;
     }
-    public boolean addUser(User user) {
-        User userFromDb = userRepo.findByUsername(user.getUsername());
 
-        if (userFromDb != null) {
-            return false;
-        }
+
+    public boolean addUser(User user) {
 
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
