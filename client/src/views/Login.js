@@ -2,11 +2,15 @@ import React, {useState} from 'react';
 import '../App.css';
 import {Button, Form,Card,Alert} from 'react-bootstrap';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
+import { useAuth } from "../context/AuthContext";
 
 function Login() {
+    const { user, setUser } = useAuth();
     const [username,setUsername]=useState('');
     const [password,setPassword]=useState('');
     const [error,setError]=useState('');
+    const [loggedin, setLoggedin]=useState(false);
 
     function doSignIn(){
         if (username === '' || password === '') {
@@ -18,7 +22,8 @@ function Login() {
                 .then(response => { console.log(response.data)
                     if (response.status === 200 && response.data.resp.success) {
                         localStorage.setItem("user", JSON.stringify(response.data));
-                        setUsername(username);
+                        setLoggedin(true);
+                        setUser(response.data.username)
                     }else  {
                         setError(response.data.resp.msg);
                         console.log(response.data)
@@ -28,6 +33,10 @@ function Login() {
                 console.log(e)
             });
         }
+    }
+
+    if (loggedin) {
+        return <Redirect to="/" />;
     }
 
     return (
