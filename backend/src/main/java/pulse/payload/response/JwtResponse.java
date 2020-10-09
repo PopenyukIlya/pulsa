@@ -1,8 +1,10 @@
 package pulse.payload.response;
 
 import net.minidev.json.JSONObject;
+import pulse.domain.Role;
 
 import java.util.List;
+import java.util.Set;
 
 public class JwtResponse {
 	private String token;
@@ -10,9 +12,11 @@ public class JwtResponse {
 	private Long id;
 	private JSONObject resp;
 	private String username;
-	private List<String> roles;
+	private Set<Role> roles;
 
-	public JwtResponse(String accessToken, JSONObject resp, Long id, String username, List<String> roles) {
+
+
+	public JwtResponse(String accessToken, JSONObject resp, Long id, String username, Set<Role> roles) {
 		this.resp=resp;
 		this.token = accessToken;
 		this.id = id;
@@ -51,7 +55,13 @@ public class JwtResponse {
 	public void setResp(JSONObject resp) {
 		this.resp = resp;
 	}
+	public Set<Role> getRoles() {
+		return roles;
+	}
 
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 
 	public String getUsername() {
 		return username;
@@ -61,7 +71,5 @@ public class JwtResponse {
 		this.username = username;
 	}
 
-	public List<String> getRoles() {
-		return roles;
-	}
+
 }

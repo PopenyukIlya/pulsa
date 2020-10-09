@@ -17,7 +17,7 @@ function Login() {
                 {withCredentials:true})
                 .then(response => { console.log(response.data)
                     if (response.status === 200 && response.data.resp.success) {
-                        localStorage.setItem("user", JSON.stringify(response.data.accessToken));
+                        localStorage.setItem("user", JSON.stringify(response.data));
                         setUsername(username);
                     }else  {
                         setError(response.data.resp.msg);

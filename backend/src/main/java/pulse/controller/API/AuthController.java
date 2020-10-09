@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
-public class RestRegistration {
+public class AuthController {
 
     @Autowired
     UserRepo userRepository;
@@ -77,14 +77,12 @@ public class RestRegistration {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateJwtToken(authentication);
 
-        User userDetails = (User) authentication.getPrincipal();
-        List<String> roles = userDetails.getAuthorities().stream()
-                .map(item -> item.getAuthority())
-                .collect(Collectors.toList());
+        User user = (User) authentication.getPrincipal();
+        Set<Role> roles=user.getRoles();
 
         return ResponseEntity.ok(new JwtResponse(jwt,resp,
-                userDetails.getId(),
-                userDetails.getUsername(),
+                user.getId(),
+                user.getUsername(),
                 roles));
     }
 }
