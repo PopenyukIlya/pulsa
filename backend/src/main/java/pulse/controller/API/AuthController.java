@@ -51,7 +51,6 @@ public class AuthController {
             resp.put("msg", "User already exists");
             resp.put("success", false);
             return ResponseEntity.ok(resp.toString());
-
         }
 
         // Create new user's account
