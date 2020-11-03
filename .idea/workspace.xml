@@ -1,78 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/QuizCreateEditDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/repos/QuizRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteQuizService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" afterDir="false" />
+    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_83.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_data_rest_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webmvc_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/UserRoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/QuizResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/EditUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pulse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pulse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/config/MyCORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/MyCORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/config/SpringDataRestCustomization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/EditUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/QuizCreateEditDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/QuizCreateEditDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteQuizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteQuizService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/config/MyCORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/config/MyCORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/config/SpringDataRestCustomization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/service/auth-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/service/auth-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pulse@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
+  <component name="FavoritesManager">
+    <favorites_list name="pulse" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="da5daff1-c011-40c0-958e-613ea9c944b2" />
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1iSMDLIsay2A8DTeRJyqStmZKQt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -85,28 +95,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request" />
+    <property name="last_opened_file_path" value="G:/dev/1667/rosen-levelup" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pulse.security" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\popen\Desktop\pulse\backend\src\main\java\pulse\payload\request" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pulse.security" />
       <recent name="pulse.payload.response" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\popen\Desktop\pulse\backend\src\main\java\pulse\payload\request" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pulse.security" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,6 +129,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,130 +162,215 @@
       <workItem from="1602499640817" duration="570000" />
       <workItem from="1602753972213" duration="39000" />
       <workItem from="1602755934170" duration="3707000" />
-      <workItem from="1603170987705" duration="6032000" />
+      <workItem from="1603170987705" duration="6198000" />
+      <workItem from="1603305443982" duration="6000" />
+      <workItem from="1603693824012" duration="3772000" />
+      <workItem from="1603736579814" duration="6406000" />
+      <workItem from="1603817802435" duration="109000" />
+      <workItem from="1603824763187" duration="1767000" />
+      <workItem from="1603863870269" duration="2663000" />
+      <workItem from="1604001524617" duration="31000" />
+      <workItem from="1604157691817" duration="1358000" />
+      <workItem from="1604159086526" duration="3652000" />
+      <workItem from="1604303950283" duration="652000" />
+      <workItem from="1604336248194" duration="149000" />
+      <workItem from="1604336511252" duration="6719000" />
+      <workItem from="1604343862850" duration="40000" />
+      <workItem from="1604382954839" duration="8690000" />
+      <workItem from="1604425030839" duration="878000" />
+      <workItem from="1604426950483" duration="652000" />
     </task>
+    <task id="LOCAL-00001" summary="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them">
+      <created>1603177796632</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603177796632</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/backend" />
     </ignored-roots>
+    <MESSAGE value="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them" />
+    <option name="LAST_COMMIT_MESSAGE" value="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="-902" key="#Project_Structure" timestamp="1603738720910">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="552" y="-902" key="#Project_Structure/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1603738720910" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601985663817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601985663817" />
-    <state x="765" y="-851" key="#com.intellij.ide.util.MemberChooser" timestamp="1602253204375">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="612" y="181" width="390" height="713" key="#com.intellij.ide.util.MemberChooser" timestamp="1604387728907">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="765" y="-851" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602253204375" />
-    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602144595864" />
+    <state x="765" y="-913" width="390" height="713" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604342597937" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604387728907" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604426442133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604426442133" />
     <state x="756" y="-676" width="407" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602073671411">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="756" y="-676" width="407" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602073671411" />
-    <state x="363" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603175300672">
+    <state x="363" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604384661465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="363" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603175300672" />
-    <state x="690" y="-814" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602073225045">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="363" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1604384661465" />
+    <state x="552" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604384613318">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="690" y="-814" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602073225045" />
+    <state x="552" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604384613318" />
+    <state x="378" y="0" key="CommitChangelistDialog2" timestamp="1603698321631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="378" y="3" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177795665" />
+    <state x="378" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603698321631" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1603171388273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603171388273" />
-    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1602762142568">
+    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1604001551226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="740" y="-806" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1601897644908" />
-    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601927968711" />
+    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604001551226" />
     <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602762142568" />
-    <state width="1493" height="374" key="GridCell.Tab.0.bottom" timestamp="1603177680508">
+    <state width="1493" height="335" key="GridCell.Tab.0.bottom" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.0.center" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
+    <state width="1493" height="132" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
+    <state width="1493" height="335" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.0.center" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.0.left" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
+    <state width="1493" height="132" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
+    <state width="1493" height="335" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.0.left" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.0.right" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
+    <state width="1493" height="132" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
+    <state width="1493" height="335" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.0.right" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.1.bottom" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
+    <state width="1493" height="132" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
+    <state width="1493" height="335" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.1.bottom" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602762172593" />
-    <state width="1493" height="374" key="GridCell.Tab.1.center" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
+    <state width="1493" height="335" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.1.center" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.1.left" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
+    <state width="1493" height="335" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.1.left" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="374" key="GridCell.Tab.1.right" timestamp="1603177680508">
+    <state width="1877" height="639" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
+    <state width="1493" height="335" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.1.right" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602267783796" />
-    <state width="1493" height="374" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177680508" />
-    <state width="1493" height="171" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602762172592" />
-    <state width="1493" height="171" key="GridCell.Tab.2.bottom" timestamp="1602762172593">
+    <state width="1877" height="639" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
+    <state width="1493" height="335" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.2.bottom" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602255970828" />
-    <state width="1493" height="171" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1602243863635" />
-    <state width="1493" height="171" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602762172593" />
-    <state width="1493" height="171" key="GridCell.Tab.2.center" timestamp="1602762172593">
+    <state width="1877" height="639" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
+    <state width="1493" height="335" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.2.center" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602255970828" />
-    <state width="1493" height="171" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1602243863635" />
-    <state width="1493" height="171" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1602762172593" />
-    <state width="1493" height="171" key="GridCell.Tab.2.left" timestamp="1602762172593">
+    <state width="1877" height="639" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
+    <state width="1493" height="335" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.2.left" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602255970828" />
-    <state width="1493" height="171" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1602243863635" />
-    <state width="1493" height="171" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1602762172593" />
-    <state width="1493" height="171" key="GridCell.Tab.2.right" timestamp="1602762172593">
+    <state width="1877" height="639" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
+    <state width="1493" height="335" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="335" key="GridCell.Tab.2.right" timestamp="1604392708735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602255970828" />
-    <state width="1493" height="171" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1602243863635" />
-    <state width="1493" height="171" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1602762172593" />
-    <state x="369" y="109" key="SettingsEditor" timestamp="1601927765262">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="639" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
+    <state width="1493" height="132" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
+    <state width="1493" height="335" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state x="490" y="-906" key="Maven.ArtifactSearchDialog" timestamp="1603738637543">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="461" y="-918" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1601896802939" />
+    <state x="490" y="-906" key="Maven.ArtifactSearchDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1603738637543" />
+    <state x="461" y="-918" key="SettingsEditor" timestamp="1604159053302">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="461" y="-918" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604159053302" />
     <state x="369" y="109" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601927765262" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603177799945">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177799945" />
     <state x="648" y="287" width="322" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603171311118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="648" y="287" width="322" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603171311118" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

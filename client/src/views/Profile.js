@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function Profile() {
     let result=function () {
-        axios.get("http://localhost:8080/api/test/user",
+        axios.get("http://localhost:8080/api/admin/quizedit",
             {headers: authHeader()}) .then(result => {console.log(result)
 
         })};

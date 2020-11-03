@@ -19,11 +19,8 @@ public class EditDeleteQuizService {
 
     public ResponseEntity<?> findAll() {
         List<Quiz> quizzes=quizRepo.findAll();
-        if (quizzes.isEmpty()){
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }else {
             return new ResponseEntity<>(quizzes,HttpStatus.OK);
-        }
+
     }
 
     public ResponseEntity<?> create(Quiz quiz) {
@@ -35,7 +32,7 @@ public class EditDeleteQuizService {
 
     }
 
-    public ResponseEntity<?> update(Long id, User user) {
+    public ResponseEntity<?> update(Long id, Quiz quiz) {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

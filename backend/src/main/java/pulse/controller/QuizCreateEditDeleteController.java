@@ -7,22 +7,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import pulse.domain.Quiz;
 import pulse.domain.User;
+import pulse.repos.QuizRepo;
 import pulse.service.admin.EditDeleteQuizService;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/admin/quizedit")
-@PreAuthorize("hasAuthority('ADMIN')")
 public class QuizCreateEditDeleteController {
 
     @Autowired
     private EditDeleteQuizService editDeleteQuizService;
 
+    @Autowired
+    private QuizRepo quizRepo;
+
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public ResponseEntity<?> findAll() {
-        return editDeleteQuizService.findAll();
+    public List<Quiz> findAll() {
+        return quizRepo.findAll();
     }
 
     @RequestMapping(value = "", method = RequestMethod.POST)
@@ -37,8 +41,8 @@ public class QuizCreateEditDeleteController {
 
     @RequestMapping(value = "{id}", method = RequestMethod.PUT)
     public ResponseEntity<?> update(@PathVariable ("id") Long id,
-                                    @RequestBody @Valid User user){
-        return editDeleteQuizService.update(id,user);
+                                    @RequestBody @Valid Quiz quiz){
+        return editDeleteQuizService.update(id,quiz);
     }
 
 }
