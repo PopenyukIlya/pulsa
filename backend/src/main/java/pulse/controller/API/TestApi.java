@@ -17,7 +17,7 @@ public class TestApi {
     }
 
     @GetMapping("/user")
-    @PreAuthorize("hasAuthority('USER')")
+    @PreAuthorize("hasAnyAuthority('USER','ADMIN')")
     public String userAccess() {
         return "User Content.";
     }

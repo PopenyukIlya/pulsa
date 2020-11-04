@@ -12,6 +12,7 @@ import pulse.repos.UserRepo;
 import java.util.List;
 
 import static pulse.domain.Role.ADMIN;
+import static pulse.domain.Role.USER;
 
 @Service
 public class EditDeleteUserService {
@@ -59,12 +60,13 @@ public class EditDeleteUserService {
     }
 
     public void updateRole(UserRoleDto userRoleDto){
-        String admin="ADMIN";
         for (int i=0;i<userRoleDto.getChecked().size();i++){
             User user=userRepo.findById(userRoleDto.getChecked().get(i)).get();
             if (userRoleDto.getNewrole().equals("ADMIN")){
+                user.getRoles().remove(Role.USER);
                 user.getRoles().add(Role.ADMIN);
             }else {
+                user.getRoles().remove(Role.ADMIN);
                 user.getRoles().add(Role.USER);
             }
             userRepo.save(user);
