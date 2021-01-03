@@ -17,8 +17,8 @@ function Login() {
             setError('Fill in all the fields.');
         } else {
             axios.post("http://localhost:8080/api/auth/signin",
-                {username,password},
-                {withCredentials:true})
+                { username, password },
+                { withCredentials:true })
                 .then(response => { console.log(response.data)
                     if (response.status === 200 && response.data.resp.success) {
                         localStorage.setItem("user", JSON.stringify(response.data));

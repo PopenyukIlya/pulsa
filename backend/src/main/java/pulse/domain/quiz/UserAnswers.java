@@ -1,15 +1,12 @@
-package pulse.domain;
+package pulse.domain.quiz;
 
 import javax.persistence.*;
 
 @Entity
-public class QuizResult {
+public class UserAnswers {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @ManyToOne
-    private User user;
-    @ManyToOne
-    private Quiz quiz;
-
+    private Answer answer;
 }

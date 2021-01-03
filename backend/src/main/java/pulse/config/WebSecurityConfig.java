@@ -14,8 +14,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.MessageDigestPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import pulse.security.AuthEntryPointJwt;
-import pulse.security.AuthTokenFilter;
+import pulse.service.security.AuthEntryPointJwt;
+import pulse.service.security.AuthTokenFilter;
 import pulse.service.UserService;
 
 @Configuration

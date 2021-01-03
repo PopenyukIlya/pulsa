@@ -3,13 +3,85 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="">
+    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="fixed: update role and profile view">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/AllQuizDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/AnswerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/QuestionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/QuizDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/TestAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/TestQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/TestResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/PulseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/Pulse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/QuizProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/QuizStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/AnswerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/PulseRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuizProgressRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/TestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/TestApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pulse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pulse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/admin/EditUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/QuizCreateEditDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/QuizCreateEditDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/QuizResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/quiz/UserAnswers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/repos/QuizRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuizRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/security/AuthEntryPointJwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/security/AuthEntryPointJwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/security/AuthProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/security/AuthProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/security/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/security/AuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/security/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/security/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteQuizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteQuizService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/TestApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/TestApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/META-INF/pulse.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/repos/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/security/AuthEntryPointJwt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/security/AuthProviderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/security/AuthTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/security/JwtUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +91,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,7 +124,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="G:/dev/1667/rosen-levelup" />
+    <property name="last_opened_file_path" value="G:/dev/integrtion/rosen-levelup" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,21 +146,11 @@
       <recent name="pulse.payload.response" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pulse.controller.dto" />
       <recent name="pulse.security" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pulse" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pulse.Application" />
@@ -147,7 +210,21 @@
       <workItem from="1604425030839" duration="878000" />
       <workItem from="1604426950483" duration="652000" />
       <workItem from="1604433008015" duration="319000" />
-      <workItem from="1604469057948" duration="1440000" />
+      <workItem from="1604469057948" duration="1656000" />
+      <workItem from="1604471234169" duration="133000" />
+      <workItem from="1604474014265" duration="483000" />
+      <workItem from="1604476956073" duration="29000" />
+      <workItem from="1605593212844" duration="3117000" />
+      <workItem from="1605689349001" duration="2286000" />
+      <workItem from="1605704608558" duration="2526000" />
+      <workItem from="1605780552098" duration="8000" />
+      <workItem from="1608579057472" duration="2324000" />
+      <workItem from="1608660976918" duration="6671000" />
+      <workItem from="1608711369091" duration="1219000" />
+      <workItem from="1609004622772" duration="6784000" />
+      <workItem from="1609058544707" duration="5303000" />
+      <workItem from="1609263151157" duration="2620000" />
+      <workItem from="1609354570370" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them">
       <created>1603177796632</created>
@@ -163,11 +240,30 @@
       <option name="project" value="LOCAL" />
       <updated>1604433320022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed: update role and profile view">
+      <created>1604470550745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604470550745</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -175,17 +271,18 @@
     </ignored-roots>
     <MESSAGE value="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them" />
     <MESSAGE value="added: Entities for quiz, update role" />
-    <option name="LAST_COMMIT_MESSAGE" value="added: Entities for quiz, update role" />
+    <MESSAGE value="fixed: update role and profile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: update role and profile view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="-902" key="#Project_Structure" timestamp="1603738720910">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="552" y="-902" key="#Project_Structure/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1603738720910" />
-    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601985663817">
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605690696050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601985663817" />
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1605690696050" />
     <state x="612" y="181" width="390" height="713" key="#com.intellij.ide.util.MemberChooser" timestamp="1604387728907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -209,93 +306,93 @@
     </state>
     <state x="690" y="-814" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602073225045" />
     <state x="552" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604384613318" />
-    <state x="378" y="0" key="CommitChangelistDialog2" timestamp="1603698321631">
+    <state x="378" y="0" key="CommitChangelistDialog2" timestamp="1604470548479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="3" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177795665" />
-    <state x="378" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603698321631" />
+    <state x="378" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604470548479" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1603171388273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603171388273" />
-    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1604001551226">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="740" y="-806" key="FileChooserDialogImpl" timestamp="1608580622304">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="740" y="-806" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1601897644908" />
+    <state x="740" y="-806" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1608580622304" />
     <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604001551226" />
-    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602762142568" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1604469923959">
+    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604476981493" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
-    <state width="1493" height="132" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
-    <state width="1493" height="132" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664221" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1609267737415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
-    <state width="1493" height="132" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737415" />
+    <state width="1493" height="55" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664221" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396602" />
-    <state width="1493" height="132" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338829034" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
-    <state width="1493" height="132" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
-    <state width="1493" height="222" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.1.center" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
-    <state width="1493" height="132" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
-    <state width="1493" height="222" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.1.left" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
-    <state width="1493" height="132" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
-    <state width="1493" height="222" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="222" key="GridCell.Tab.1.right" timestamp="1604469923959">
+    <state width="1877" height="394" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1609267737416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="639" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
-    <state width="1493" height="132" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828786" />
-    <state width="1493" height="222" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604469923959" />
-    <state width="1493" height="335" key="GridCell.Tab.2.bottom" timestamp="1604392708735">
+    <state width="1877" height="394" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609084767628" />
+    <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609267737416" />
+    <state width="1493" height="55" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
+    <state width="1493" height="55" key="GridCell.Tab.2.bottom" timestamp="1609016664224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="639" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
     <state width="1493" height="132" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
-    <state width="1493" height="335" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
-    <state width="1493" height="335" key="GridCell.Tab.2.center" timestamp="1604392708735">
+    <state width="1493" height="55" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664224" />
+    <state width="1493" height="55" key="GridCell.Tab.2.center" timestamp="1609016664223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="639" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
     <state width="1493" height="132" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
-    <state width="1493" height="335" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
-    <state width="1493" height="335" key="GridCell.Tab.2.left" timestamp="1604392708735">
+    <state width="1493" height="55" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
+    <state width="1493" height="55" key="GridCell.Tab.2.left" timestamp="1609016664223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="639" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
     <state width="1493" height="132" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
-    <state width="1493" height="335" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
-    <state width="1493" height="335" key="GridCell.Tab.2.right" timestamp="1604392708735">
+    <state width="1493" height="55" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
+    <state width="1493" height="55" key="GridCell.Tab.2.right" timestamp="1609016664224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="639" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604343396603" />
     <state width="1493" height="132" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1604338828787" />
-    <state width="1493" height="335" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604392708735" />
+    <state width="1493" height="55" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664224" />
     <state x="490" y="-906" key="Maven.ArtifactSearchDialog" timestamp="1603738637543">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
@@ -305,13 +402,15 @@
     </state>
     <state x="461" y="-918" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604159053302" />
     <state x="369" y="109" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1601927765262" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603177799945">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604470554503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177799945" />
-    <state x="648" y="287" width="322" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603171311118">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604470554503" />
+    <state x="810" y="-718" width="322" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1609073185713">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="810" y="-718" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609073185713" />
     <state x="648" y="287" width="322" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603171311118" />
   </component>
   <component name="XDebuggerManager">
@@ -319,28 +418,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>67</line>
+          <line>65</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/TestController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="34" />
+          <line>20</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

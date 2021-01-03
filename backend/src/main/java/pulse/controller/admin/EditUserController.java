@@ -1,11 +1,13 @@
-package pulse.controller;
+package pulse.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import pulse.controller.dto.UserRoleDto;
+import pulse.domain.User;
 import pulse.service.admin.EditDeleteUserService;
 
 
@@ -19,8 +21,8 @@ public class EditUserController {
     private EditDeleteUserService editDeleteUserService;
 
     @GetMapping
-    public ResponseEntity<?> findAll() {
-        return editDeleteUserService.findAll();
+    public ResponseEntity<?> findAll(@AuthenticationPrincipal User user) {
+        return editDeleteUserService.findAll(user);
     }
 
     @DeleteMapping

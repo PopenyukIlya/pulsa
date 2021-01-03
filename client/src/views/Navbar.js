@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Alert,Button,ButtonGroup,Nav,Navbar} from "react-bootstrap";
@@ -34,7 +33,18 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
                 <Nav.Link href="/">Main</Nav.Link>
-                <Nav.Link href="/profile">Profile</Nav.Link>
+               
+                { store ?
+                    JSON.parse(localStorage.getItem("user")).roles.includes("USER") ? <Nav.Link href="/profile">Profile</Nav.Link> : null
+                    :
+                    null
+                }   
+                  { store ?
+                    JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link href="/profile">Profile</Nav.Link> : null
+                    :
+                    null
+                }
+                
                 { store ?
                     JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link href="/admin">Admin</Nav.Link> : null
                     :

@@ -1,7 +1,7 @@
-package pulse.domain;
+package pulse.domain.quiz;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 public class Question {
@@ -10,9 +10,9 @@ public class Question {
     private Long id;
     private String text;
     private int complexity;
-    @OneToMany(fetch = FetchType.EAGER)
-    private Set<Answer> answers;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.LAZY)
+    private List<Answer> answers;
+    @ManyToOne(fetch = FetchType.LAZY)
     private Quiz quiz;
 
     public Long getId() {
@@ -39,11 +39,11 @@ public class Question {
         this.complexity = complexity;
     }
 
-    public Set<Answer> getAnswers() {
+    public List<Answer> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(Set<Answer> answers) {
+    public void setAnswers(List<Answer> answers) {
         this.answers = answers;
     }
 

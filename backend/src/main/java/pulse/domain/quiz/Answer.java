@@ -1,4 +1,4 @@
-package pulse.domain;
+package pulse.domain.quiz;
 
 import javax.persistence.*;
 
@@ -10,7 +10,7 @@ public class Answer {
     private Long id;
     private String text;
     private boolean correct;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Question question;
 
     public Long getId() {

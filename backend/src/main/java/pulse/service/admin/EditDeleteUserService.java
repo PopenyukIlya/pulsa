@@ -7,12 +7,9 @@ import org.springframework.stereotype.Service;
 import pulse.controller.dto.UserRoleDto;
 import pulse.domain.Role;
 import pulse.domain.User;
-import pulse.repos.UserRepo;
+import pulse.domain.repos.UserRepo;
 
 import java.util.List;
-
-import static pulse.domain.Role.ADMIN;
-import static pulse.domain.Role.USER;
 
 @Service
 public class EditDeleteUserService {
@@ -20,7 +17,8 @@ public class EditDeleteUserService {
     @Autowired
     private UserRepo userRepo;
 
-    public ResponseEntity<?> findAll() {
+    public ResponseEntity<?> findAll(User user) {
+        String name=user.getFirst_name();
         List<User> users= userRepo.findAll();
         if (users.isEmpty()){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

@@ -2,7 +2,6 @@ package pulse.controller.API;
 
 import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -13,18 +12,13 @@ import pulse.domain.User;
 import pulse.payload.request.LoginRequest;
 import pulse.payload.request.SignupRequest;
 import pulse.payload.response.JwtResponse;
-import pulse.payload.response.MessageResponse;
-import pulse.repos.UserRepo;
-import pulse.security.AuthProviderImpl;
-import pulse.security.JwtUtils;
+import pulse.domain.repos.UserRepo;
+import pulse.service.security.AuthProviderImpl;
+import pulse.service.security.JwtUtils;
 import pulse.service.UserService;
 
-import javax.validation.Valid;
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)

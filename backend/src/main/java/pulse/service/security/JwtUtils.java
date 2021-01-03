@@ -1,4 +1,4 @@
-package pulse.security;
+package pulse.service.security;
 
 import java.util.Date;
 

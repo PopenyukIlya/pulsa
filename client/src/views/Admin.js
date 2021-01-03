@@ -6,19 +6,17 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import {Button, Dropdown} from "react-bootstrap";
 
 function Admin() {
-
     const [data, setData] = useState([]);
     const [checked, setChecked] = useState([]);
-    
 
     useEffect(() => {
         axios.get("http://localhost:8080/api/admin/useredit",
             {headers: authHeader()}).then(result => {
                 setData(result.data);
         }).catch(e => {
-          console.log(e)
+            console.log(e)
         });
-      }, []);
+    }, []);
 
     const columns = [{
         dataField: 'id',
@@ -62,6 +60,14 @@ function Admin() {
             }
         }
       };
+     
+      axios.get("http://localhost:8080/api/admin/quizedit",
+      {headers: authHeader()}).then(result => {
+        console.log(result);
+  }).catch(e => {
+    console.log(e)
+  });
+
 
     function doChange(newrole) {
         console.log({newrole,checked});
