@@ -9,4 +9,5 @@ public class TestAnswer {
     private Long id;
     private Long progress;
     private String text;
+    private Long questionId;
 }

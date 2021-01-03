@@ -9,7 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import pulse.controller.dto.AllQuizDto;
 import pulse.controller.dto.QuizDto;
+import pulse.domain.quiz.Question;
 import pulse.domain.quiz.Quiz;
+import pulse.domain.repos.QuestionRepo;
 import pulse.domain.repos.QuizRepo;
 
 import java.util.List;
@@ -27,6 +29,8 @@ public class EditDeleteQuizService {
     @Autowired
     private ModelMapper modelMapper;
     @Autowired
+    private QuestionRepo questionRepo;
+    @Autowired
     private QuizRepo quizRepo;
 
 
@@ -35,10 +39,12 @@ public class EditDeleteQuizService {
                 .map(quiz -> modelMapper.map(quiz, QuizDto.class)).collect(Collectors.toList());
     }
 
-    public ResponseEntity<?> create(AllQuizDto quizDto) {
-        Quiz quiz=modelMapper.map(quizDto,Quiz.class);
+    public ResponseEntity<?> create(String name) {
+        Quiz quiz=new Quiz();
+        quiz.setName(name);
         quizRepo.save(quiz);
-        return new ResponseEntity<>(HttpStatus.OK);
+        Long id=quiz.getId();
+        return new ResponseEntity<>(id,HttpStatus.OK);
     }
 
     public ResponseEntity<?> delete(Long id) {
@@ -49,10 +55,8 @@ public class EditDeleteQuizService {
     public ResponseEntity<?> update(AllQuizDto quizDto) {
        Quiz old=quizRepo.findById(quizDto.getId()).get();
         Quiz update=modelMapper.map(quizDto,Quiz.class);
-        old.getQuestions().clear();
-        old.getQuestions().addAll(update.getQuestions());
-        old.setName(update.getName());
-        quizRepo.save(old);
+        List <Question> questions=old.getQuestions();
+        quizRepo.save(update);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

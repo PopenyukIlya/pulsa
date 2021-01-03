@@ -10,7 +10,7 @@ public class Answer {
     private Long id;
     private String text;
     private boolean correct;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
     private Question question;
 
     public Long getId() {

@@ -10,9 +10,9 @@ public class Question {
     private Long id;
     private String text;
     private int complexity;
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
     private List<Answer> answers;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
     private Quiz quiz;
 
     public Long getId() {

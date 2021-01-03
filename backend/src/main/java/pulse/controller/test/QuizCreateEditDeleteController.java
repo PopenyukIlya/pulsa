@@ -33,9 +33,9 @@ public class QuizCreateEditDeleteController {
         return editDeleteQuizService.findByID(id);
     }
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
-    public ResponseEntity<?> create(@RequestBody AllQuizDto quiz){
-        return editDeleteQuizService.create(quiz);
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> create(@RequestBody String name){
+        return editDeleteQuizService.create(name);
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)

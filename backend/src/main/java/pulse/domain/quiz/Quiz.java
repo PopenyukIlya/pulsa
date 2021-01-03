@@ -9,7 +9,7 @@ public class Quiz {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
     List<Question> questions;
 
     public Long getId() {
