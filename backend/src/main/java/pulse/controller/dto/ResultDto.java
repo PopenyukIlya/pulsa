@@ -5,7 +5,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class TestAnswer {
+public class ResultDto {
     private Long id;
-    private String text;
+    private QuizDto quiz;
+    private int grade;
+    private String endData;
 }

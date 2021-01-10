@@ -1,4 +1,4 @@
-package pulse.controller.dto;
+package pulse.controller.dto.test;
 
 import lombok.Getter;
 import lombok.Setter;

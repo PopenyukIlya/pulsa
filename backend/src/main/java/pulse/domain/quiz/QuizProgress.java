@@ -21,5 +21,6 @@ public class QuizProgress {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
     private int grade;
+    private String endData;
     private QuizStatus status;
 }

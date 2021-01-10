@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pulse.controller.dto.*;
 import pulse.controller.dto.test.ListAnswer;
+import pulse.controller.dto.test.TestQuestion;
 import pulse.domain.User;
 import pulse.domain.quiz.*;
 import pulse.domain.repos.AnswerRepo;
@@ -13,7 +14,9 @@ import pulse.domain.repos.QuestionRepo;
 import pulse.domain.repos.QuizProgressRepo;
 import pulse.domain.repos.QuizRepo;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -113,12 +116,20 @@ public class TestService {
 
         if (testQuestion.getId()==null) {
             testStatus=testStatus+" passed";
+            quizProgress.setEndData(getCurrentTimeStamp());
             quizProgress.setStatus(QuizStatus.ENDED);
         }
         testQuestion.setProgress(quizProgress.getId());
         testQuestion.setTestStatus(testStatus);
         quizProgressRepo.save(quizProgress);
         return testQuestion;
+    }
+
+    public static String getCurrentTimeStamp() {
+        SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//dd/MM/yyyy
+        Date now = new Date();
+        String strDate = sdfDate.format(now);
+        return strDate;
     }
 
     public TestResultDto result(Long id) {

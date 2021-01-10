@@ -18,5 +18,9 @@ div, h1, h2, p {
 }
 
 .Main {
-  min-height: calc(100vh - 141px);
+  min-height: calc(100vh - 123px);
+}
+
+p {
+  margin-bottom: 5px !important;
 }

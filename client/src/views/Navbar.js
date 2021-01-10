@@ -39,7 +39,7 @@ function NavBar() {
                
                 { 
                     store ? getStore().roles.includes("USER") || getStore().roles.includes("ADMIN") ?
-                        <Nav.Link onClick={() => history.push('/profile')}>Profile</Nav.Link> : 
+                        <Nav.Link onClick={() => history.push('/results')}>Results</Nav.Link> : 
                         null : null
                 }   
                   { store ?

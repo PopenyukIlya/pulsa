@@ -5,11 +5,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pulse.controller.dto.AllQuizDto;
 import pulse.controller.dto.QuizDto;
-import pulse.domain.quiz.Quiz;
 import pulse.domain.repos.QuizRepo;
 import pulse.service.admin.EditDeleteQuizService;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)

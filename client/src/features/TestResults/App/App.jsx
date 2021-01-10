@@ -23,38 +23,6 @@ const App = props => {
       }
     }).catch(err => {
       console.log(err);
-      alert(err.message);
-      // setTest([{
-      //   id: 1,
-      //   name: "First test",
-      //   questions: [
-      //     {
-      //       id: 1,
-      //       text: "1 + 1",
-      //       complexity: 1,
-      //       answers: [
-      //         {id: 1, text: '1', correct: true },
-      //         {id: 2, answer: '2', correct: true },
-      //         {id: 3, answer: '3', correct: true },
-      //         {id: 4, answer: '4', correct: true }
-      //       ],
-      //       user_answer_id: 2,
-      //       correct_answer_id: 2,
-      //     },
-      //     {
-      //       id: 2,
-      //       question_name: "2 + 2 * 2",
-      //       answers: [
-      //         {id: 5, answer: '8'},
-      //         {id: 6, answer: '6'},
-      //         {id: 7, answer: '7'},
-      //         {id: 8, answer: '10'}
-      //       ],
-      //       user_answer_id: 5,
-      //       correct_answer_id: 6,
-      //     }
-      //   ]
-      // }]);
       setLoading(false);
     });
   }, []);

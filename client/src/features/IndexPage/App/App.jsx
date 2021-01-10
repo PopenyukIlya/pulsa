@@ -29,24 +29,41 @@ const App = (props) => {
     });
   }, [])
 
-  console.log(tests)
-
   const deleteTest = (event, id) => {
-    setLoading(true);
     event.stopPropagation();
-    // axios.delete("http://localhost:8080/api/quiz/" + id,
-    //   {headers: authHeader()}
-    // ).then(res => {
+    setLoading(true);
+    axios.delete("http://localhost:8080/api/quiz/" + id,
+      {headers: authHeader()}
+    ).then(res => {
+      if (res.status === 200) {
+        setTests(() => {
+          const newTests = [];
+          for (let i of tests) {
+            newTests.push(i);
+          }
 
-      // if (res.status === 200) {
-        tests.splice(tests.findIndex((i) => {
-          return i.id === id;
-        }), 1);
-        setTests(tests)
-      // }
-      console.log(tests);
+          newTests.splice(newTests.findIndex((i) => {
+            return i.id === id;
+          }), 1)
+          return newTests
+        });
+      }
       setLoading(false);
-    // }).catch(err => console.log(err.message))
+    }).catch(err => {
+      setTests(() => {
+        const newTests = [];
+        for (let i of tests) {
+          newTests.push(i);
+        }
+
+        newTests.splice(newTests.findIndex((i) => {
+          return i.id === id;
+        }), 1)
+        return newTests
+      });
+      setLoading(false);
+      console.log(err.message);
+    })
   }
 
   return (
@@ -67,19 +84,27 @@ const App = (props) => {
                 onClick={() => history.push("user_test/" + test.id)}
               >
                 {test.name}
-                <Button
-                  className={classes.CreateTest}
-                  onClick={event => {
-                    event.stopPropagation();
-                    history.push("edit_test/" + test.id)}
-                  }
-                >
-                  Edit Test
-                </Button>
-                <span
-                  className={classes.CrossTest}
-                  onClick={event => deleteTest(event, test.id)}
-                />
+                <div className={classes.CardButtons}>
+                  <Button
+                    className={classes.CardButton}
+                    onClick={event => {
+                      event.stopPropagation();
+                      history.push("edit_test/" + test.id)}
+                    }
+                  >
+                    Edit Test
+                  </Button>
+                  <Button
+                    className={classes.CardButton}
+                    variant="danger"
+                    onClick={ event => {
+                      event.stopPropagation();
+                      deleteTest(event, test.id)}
+                    }
+                  >
+                    Delete Test
+                  </Button>
+                </div>   
               </div>
             ))}
             <Button className={classes.Button} onClick={() => setModalIsShown(true)}>Create test</Button>
