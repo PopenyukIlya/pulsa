@@ -16,3 +16,7 @@ div, h1, h2, p {
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
+
+.Main {
+  min-height: calc(100vh - 141px);
+}

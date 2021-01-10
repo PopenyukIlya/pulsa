@@ -2,7 +2,6 @@ package pulse.controller.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-import pulse.domain.quiz.UserAnswers;
 
 import java.util.List;
 
@@ -10,5 +9,5 @@ import java.util.List;
 @Setter
 public class TestResultDto {
     private AllQuizDto allQuizDto;
-    private List<UserAnswers> userAnswers;
+    private List<AnswerDto> userAnswers;
 }

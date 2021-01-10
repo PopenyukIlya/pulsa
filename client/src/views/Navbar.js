@@ -3,8 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Alert,Button,ButtonGroup,Nav,Navbar} from "react-bootstrap";
 import { Redirect } from 'react-router-dom';
 import { useAuth } from "../context/AuthContext";
+import { useHistory } from "react-router-dom";
 
 function NavBar() {
+    let history = useHistory();
 
     const { user, setUser } = useAuth();
     const [store, setStore] = useState(getStore());
@@ -23,21 +25,22 @@ function NavBar() {
 
     function logout() {
         localStorage.removeItem("user");
-        setStore(false)
+        setStore(false);
+        history.replace('/signin')
     }
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/">Pulse</Navbar.Brand>
+        <Navbar.Brand onClick={() => history.push('/')}>Pulse</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="/">Main</Nav.Link>
+                <Nav.Link onClick={() => history.push('/')}>Main</Nav.Link>
                
-                { store ?
-                    JSON.parse(localStorage.getItem("user")).roles.includes("USER") ? <Nav.Link href="/profile">Profile</Nav.Link> : null
-                    :
-                    null
+                { 
+                    store ? getStore().roles.includes("USER") || getStore().roles.includes("ADMIN") ?
+                        <Nav.Link onClick={() => history.push('/profile')}>Profile</Nav.Link> : 
+                        null : null
                 }   
                   { store ?
                     JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link href="/profile">Profile</Nav.Link> : null
@@ -53,8 +56,8 @@ function NavBar() {
             </Nav>
         </Navbar.Collapse>
         <ButtonGroup aria-label="Basic example">
-            {store ? null :<Button href="/signin" className="mr-2" variant="info">Login</Button>}
-            {store ? null : <Button href="/signup" variant="light">Register</Button>}
+            {store ? null :<Button onClick={() => history.push('/signin')} className="mr-2" variant="info">Login</Button>}
+            {store ? null : <Button onClick={() => history.push('/signup')} variant="light">Register</Button>}
             {store ? <Button onClick={logout} variant="light">Logout</Button> : null}
         </ButtonGroup>
         </Navbar>

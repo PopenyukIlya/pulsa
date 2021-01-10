@@ -4,16 +4,16 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pulse.controller.dto.AllQuizDto;
-import pulse.controller.dto.TestAnswer;
-import pulse.controller.dto.TestQuestion;
-import pulse.controller.dto.TestResultDto;
+import pulse.controller.dto.*;
+import pulse.controller.dto.test.ListAnswer;
 import pulse.domain.User;
 import pulse.domain.quiz.*;
 import pulse.domain.repos.AnswerRepo;
+import pulse.domain.repos.QuestionRepo;
 import pulse.domain.repos.QuizProgressRepo;
 import pulse.domain.repos.QuizRepo;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,6 +31,9 @@ public class TestService {
     private AnswerRepo answerRepo;
 
     @Autowired
+    private QuestionRepo questionRepo;
+
+    @Autowired
     private QuizProgressRepo quizProgressRepo;
 
     public TestQuestion start(Long id, User user) {
@@ -43,10 +46,12 @@ public class TestService {
         TestQuestion testQuestion = null;
         List<Question> questions = quiz.getQuestions();
         for (Question question : questions) {
-            if (question.getComplexity() < 3) {
+            if (question.getComplexity() <= 2) {
                 testQuestion = modelMapper.map(question, TestQuestion.class);
             }
         }
+        testQuestion.setTestStatus("started");
+        quizProgress = quizProgressRepo.save(quizProgress);
         testQuestion.setProgress(quizProgress.getId());
         return testQuestion;
     }
@@ -70,34 +75,48 @@ public class TestService {
         return testQuestion;
     }
 
-    public TestQuestion getQuestion(TestAnswer testAnswer) {
+    public TestQuestion getQuestion(UserAnswerDto testAnswer) {//переделать
         // пришедшего ответа
+        //тут добавлять в пасд
         TestQuestion testQuestion = new TestQuestion();
-        Quiz quiz = null;
         QuizProgress quizProgress = quizProgressRepo.findById(testAnswer.getProgress()).get();
-        if (quizProgress.getStatus().equals(QuizStatus.STARTED)) {
-            Answer answer = answerRepo.findById(testAnswer.getId()).get();
-            if (answer.isCorrect()) {
-                testQuestion.setTestStatus("true");
+        Quiz  quiz = quizProgress.getQuiz();
+        String testStatus="";
+
+        List<ListAnswer> answers=testAnswer.getAnswers();
+        List<Answer> userAnswers=new ArrayList<>();
+        for (ListAnswer userAnswer:answers){
+            Answer answer = answerRepo.findById(userAnswer.getId()).get();//тут чекаем трушность
+
+            if (answer.isCorrect()) {//переделать логику верности ответа смотреть сколько правильных ответов
+                testStatus="true";
             } else {
-                testQuestion.setTestStatus("false");
+                testStatus="false";
             }
-            quizProgress.getAnswers().add(answer);
-            quiz = quizProgress.getQuiz();
+            userAnswers.add(answer);
+        }
+        quizProgress.getAnswers().addAll(userAnswers);
+
+            Question passedQuestion=questionRepo.findById(testAnswer.getId()).get();
+            quizProgress.getPassedQuestions().add(passedQuestion);
+            quizProgressRepo.save(quizProgress);
+
             List<Question> passed = quizProgress.getPassedQuestions();
             List<Question> questions = quiz.getQuestions();
             for (Question question : questions) {
-                if (question.getComplexity() < 3 && !passed.contains(question)) {//тут нахождение сложности по пульсу
+                if (question.getComplexity() <= 3 && !passed.contains(question)) {
+                    //тут логика
+                    // нахождение сложности по пульсу
                     testQuestion = modelMapper.map(question, TestQuestion.class);
-                    quizProgress.getPassedQuestions().add(question);
                 }
             }
-        }
-        if (testQuestion.getAnswers().size() == 0) {
-            testQuestion.getTestStatus().concat(" passed");
+
+        if (testQuestion.getId()==null) {
+            testStatus=testStatus+" passed";
             quizProgress.setStatus(QuizStatus.ENDED);
         }
         testQuestion.setProgress(quizProgress.getId());
+        testQuestion.setTestStatus(testStatus);
         quizProgressRepo.save(quizProgress);
         return testQuestion;
     }
@@ -107,11 +126,11 @@ public class TestService {
         //взять вопросы
         Quiz quiz = quizProgress.getQuiz();
         AllQuizDto allQuizDto = modelMapper.map(quiz, AllQuizDto.class);
-        List<UserAnswers> userAnswers = quizProgress.getAnswers()
-                .stream().map(answer -> modelMapper.map(answer, UserAnswers.class)).collect(Collectors.toList());
+        List<AnswerDto> userAnswers = quizProgress.getAnswers()
+                .stream().map(answer -> modelMapper.map(answer, AnswerDto.class)).collect(Collectors.toList());
         TestResultDto testResultDto = new TestResultDto();
         testResultDto.setAllQuizDto(allQuizDto);
         testResultDto.setUserAnswers(userAnswers);
-        return null;
+        return testResultDto;
     }
 }

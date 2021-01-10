@@ -33,3 +33,23 @@
   margin-left: auto !important;
   padding: 0 10px !important;
 }
+
+.CrossTest {
+  cursor: pointer;
+  display: block;
+}
+
+.CrossTest:after {
+  position: absolute;
+  top: -17px;
+  font-size: 20px;
+  content: "\f00d" !important;
+  font-family: FontAwesome;
+  left: calc(100% - 30px);
+  top: 3px;
+  color: #999;
+  cursor: pointer;
+  font-weight: 100 !important;
+  display: contents;
+  font-style: normal;
+}

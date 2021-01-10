@@ -12,13 +12,14 @@ public class QuizProgress {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     private Quiz quiz;
-    @OneToMany(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Answer> answers;
-    @OneToMany(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Question> passedQuestions;
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
+    private int grade;
     private QuizStatus status;
 }

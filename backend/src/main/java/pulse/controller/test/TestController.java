@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import pulse.controller.dto.TestAnswer;
 import pulse.controller.dto.TestQuestion;
 import pulse.controller.dto.TestResultDto;
+import pulse.controller.dto.UserAnswerDto;
 import pulse.domain.User;
 import pulse.service.test.TestService;
 
@@ -28,7 +29,7 @@ public class TestController {
     }
 
     @PostMapping
-    public TestQuestion checkAnswerGetQuestion(@RequestBody TestAnswer testAnswer) {
+    public TestQuestion checkAnswerGetQuestion(@RequestBody UserAnswerDto testAnswer) {
         return testService.getQuestion(testAnswer);
     }
 

@@ -11,10 +11,10 @@ const App = props => {
   let { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [question, setQuestion] = useState(null);
-  const [userAnswer, setUserAnswer] = useState(null);
+  const [userAnswer, setUserAnswer] = useState({id: null, progress: null, answers: []});
   const [pulse, setPulse] = useState(null);
 
-  const getpulse = () => {
+  const getPulse = () => {
     axios.get("http://localhost:8080/api/pulse",
       {headers: authHeader()}
     ).then(res => {
@@ -27,10 +27,12 @@ const App = props => {
   }
 
   const changeUserAnswer = (id, progress, text, questionId) => {
+    const newAnswer = !userAnswer?.answers.some(el => el.id === id);
+
     setUserAnswer(userAnswer => {
-       return {...userAnswer, id, process, text, questionId}
+      const answers = newAnswer ? [...userAnswer.answers, {id, text}] : userAnswer.answers.filter(a => a.id !== id)
+      return {...userAnswer, id: questionId, progress: progress, answers}
     })
-    console.log(userAnswer)
   }
 
   useEffect(() => {
@@ -40,7 +42,6 @@ const App = props => {
       if (res.data.error) {
         alert(res.data.error)
       } else {
-        console.log(res.data)
         setQuestion(res.data);
         setLoading(false);
       }
@@ -48,21 +49,26 @@ const App = props => {
       console.log(err);
       alert(err.message)
     });
-    const interval = setInterval(() => {
-      getpulse();
-    }, 2000);
-    return () => clearInterval(interval);
+    // const interval = setInterval(() => {
+    //   getPulse();
+    // }, 2000);
+    // return () => clearInterval(interval);
   }, []);
 
   const submit = () => {
     setLoading(true);
-    axios.post("http://localhost:8080/api/test/", userAnswer)
+    setUserAnswer({id: null, progress: null, answers: []});
+    axios.post("http://localhost:8080/api/test", userAnswer)
       .then(res => {
         if (res.data.error) {
           alert(res.data.error)
         } else {
-          setLoading(false);
-          setQuestion(res.data);
+          if (res.data.testStatus.includes('passed')) {
+            history.replace('/test_results/' + res.data.progress);
+          } else {
+            setQuestion(res.data);
+            setLoading(false);
+          }
         }
       }).catch((e) => {
         setLoading(false);
@@ -85,15 +91,15 @@ const App = props => {
                     type="checkbox"
                     value={answer.text}
                     id={`radioButton${answer.id}`}
-                    onClick={() => changeUserAnswer({question_id: question.id, answer_id: answer.id})} />
+                    onClick={() => changeUserAnswer(answer.id, question.progress, answer.text, question.id)} />
                   <label htmlFor={`radioButton${answer.id}`}>
                     {" " + answer.text}
                   </label><br />
                 </div>
               )}
             )}
-            <Button onClick={submit} disabled={!userAnswer}>Submit</Button>
-            <p>{pulse}</p>
+            <Button onClick={submit} disabled={!userAnswer?.answers.length > 0}>Submit</Button>
+            {/* <p>{pulse}</p> */}
           </div>
       </div> :
       <div className={classes.Loading}>

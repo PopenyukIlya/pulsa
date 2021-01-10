@@ -14,29 +14,47 @@ const App = (props) => {
   let history = useHistory();
 
   useEffect(() => {
-    try {
-      axios.get("http://localhost:8080/api/quiz",
+    axios.get("http://localhost:8080/api/quiz",
       {headers: authHeader()}
-      ).then(res => {
-        if (res.data.error) {
-          alert(res.data.error);
-        } else {
-          setTests(res.data);
-          setLoading(false);
-        }
-      });
-    } catch (err) {
-      alert(err.message);
-      setLoading(false);
-    }
+    ).then(res => {
+      if (res.data.error) {
+        alert(res.data.error);
+      } else {
+        setTests(res.data);
+        setLoading(false);
+      }
+    }).catch(err => {
+      history.replace('/signin');
+
+    });
   }, [])
+
+  console.log(tests)
+
+  const deleteTest = (event, id) => {
+    setLoading(true);
+    event.stopPropagation();
+    // axios.delete("http://localhost:8080/api/quiz/" + id,
+    //   {headers: authHeader()}
+    // ).then(res => {
+
+      // if (res.status === 200) {
+        tests.splice(tests.findIndex((i) => {
+          return i.id === id;
+        }), 1);
+        setTests(tests)
+      // }
+      console.log(tests);
+      setLoading(false);
+    // }).catch(err => console.log(err.message))
+  }
 
   return (
     <div>
       {(!loading) ?
       <div>
         <div className={classes.Wrapper}>
-          <h1>IndexPage</h1>
+          <h1>Tests</h1>
           <CreateTestModal
             modalIsShownHandler={() => setModalIsShown(true)}
             modalIsShownCancelHandler={() => setModalIsShown(false)}
@@ -58,10 +76,14 @@ const App = (props) => {
                 >
                   Edit Test
                 </Button>
+                <span
+                  className={classes.CrossTest}
+                  onClick={event => deleteTest(event, test.id)}
+                />
               </div>
             ))}
-        </div>
-        <Button onClick={() => setModalIsShown(true)}>Create test</Button>
+            <Button className={classes.Button} onClick={() => setModalIsShown(true)}>Create test</Button>
+        </div> 
       </div> :
       <div className={classes.Loading}>
         <ReactLoading type={"spinningBubbles"} color="#000000" />
