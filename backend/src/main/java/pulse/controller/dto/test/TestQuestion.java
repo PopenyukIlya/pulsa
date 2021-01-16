@@ -13,4 +13,5 @@ public class TestQuestion {
     private String text;
     private List<TestAnswer> answers;
     private String testStatus;
+    private Long quizId;
 }

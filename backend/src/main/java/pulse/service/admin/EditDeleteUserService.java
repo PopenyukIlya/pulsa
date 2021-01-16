@@ -1,5 +1,6 @@
 package pulse.service.admin;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,11 +27,6 @@ public class EditDeleteUserService {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    public ResponseEntity<?> delete(UserRoleDto userDtos) {
-
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
-
     public ResponseEntity<?> deleteUser(Long id){
 
         return new ResponseEntity<>(HttpStatus.OK);
@@ -41,7 +37,8 @@ public class EditDeleteUserService {
        boolean isInDb=validateUsers(users.getChecked());
        if (isInDb){
            updateRole(users);
-           return new ResponseEntity<>(HttpStatus.OK);
+           List<User> updatedUsers= userRepo.findAll();
+           return new ResponseEntity<>(updatedUsers,HttpStatus.OK);
        }else {
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
        }

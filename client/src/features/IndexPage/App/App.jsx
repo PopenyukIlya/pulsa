@@ -11,13 +11,15 @@ const App = (props) => {
   const [modalIsShown, setModalIsShown] = useState(false);
   const [tests, setTests] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(null);
   let history = useHistory();
 
   useEffect(() => {
+    setIsAdmin(JSON.parse(localStorage.getItem("user")) ? JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") : false)
     axios.get("http://localhost:8080/api/quiz",
       {headers: authHeader()}
     ).then(res => {
-      if (res.data.error) {
+      if (res.status !== 200) {
         alert(res.data.error);
       } else {
         setTests(res.data);
@@ -77,36 +79,49 @@ const App = (props) => {
             modalIsShownCancelHandler={() => setModalIsShown(false)}
             modalIsShown={modalIsShown}
           />
-            {tests.map(test => (
-              <div
-                className={classes.Card}
-                key={test.id}
-                onClick={() => history.push("user_test/" + test.id)}
-              >
-                {test.name}
-                <div className={classes.CardButtons}>
-                  <Button
-                    className={classes.CardButton}
-                    onClick={event => {
-                      event.stopPropagation();
-                      history.push("edit_test/" + test.id)}
-                    }
-                  >
-                    Edit Test
-                  </Button>
-                  <Button
-                    className={classes.CardButton}
-                    variant="danger"
-                    onClick={ event => {
-                      event.stopPropagation();
-                      deleteTest(event, test.id)}
-                    }
-                  >
-                    Delete Test
-                  </Button>
-                </div>   
-              </div>
-            ))}
+            {tests.length > 0 ? 
+              (tests.map(test => (
+                <div
+                  className={classes.Card}
+                  key={test.id}
+                  onClick={() => history.push("user_test/" + test.id)}
+                >
+                  {test.name}
+                  {isAdmin ? 
+                    <div className={classes.CardButtons}>
+                      <Button
+                        className={classes.CardButton}
+                        onClick={event => {
+                          event.stopPropagation();
+                          history.push("students/" + test.id)}
+                        }
+                      >
+                        Results by test
+                      </Button>
+                      <Button
+                        className={classes.CardButton}
+                        onClick={event => {
+                          event.stopPropagation();
+                          history.push("edit_test/" + test.id)}
+                        }
+                      >
+                        Edit Test
+                      </Button>
+                      <Button
+                        className={classes.CardButton}
+                        variant="danger"
+                        onClick={ event => {
+                          event.stopPropagation();
+                          deleteTest(event, test.id)}
+                        }
+                      >
+                        Delete Test
+                      </Button>
+                    </div> : null
+                  }
+                </div>
+              ))) : <p>No tests</p>
+            }
             <Button className={classes.Button} onClick={() => setModalIsShown(true)}>Create test</Button>
         </div> 
       </div> :

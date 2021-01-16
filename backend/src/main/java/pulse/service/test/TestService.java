@@ -40,13 +40,15 @@ public class TestService {
     private QuizProgressRepo quizProgressRepo;
 
     public TestQuestion start(Long id, User user) {
+        TestQuestion testQuestion = check(user);
+        if(testQuestion==null){
         Quiz quiz = quizRepo.findById(id).get();
         QuizProgress quizProgress = new QuizProgress();
         quizProgress.setQuiz(quiz);
         quizProgress.setUser(user);
         quizProgress.setStatus(QuizStatus.STARTED);
         quizProgress = quizProgressRepo.save(quizProgress);
-        TestQuestion testQuestion = null;
+        testQuestion = null;
         List<Question> questions = quiz.getQuestions();
         for (Question question : questions) {
             if (question.getComplexity() <= 2) {
@@ -55,24 +57,27 @@ public class TestService {
         }
         testQuestion.setTestStatus("started");
         quizProgress = quizProgressRepo.save(quizProgress);
-        testQuestion.setProgress(quizProgress.getId());
+        testQuestion.setProgress(quizProgress.getId());}
         return testQuestion;
     }
 
     public TestQuestion check(User user) {
         List<QuizProgress> quizProgresses = quizProgressRepo.findByUser(user);
         TestQuestion testQuestion = null;
-        Quiz quiz = null;
         for (QuizProgress quizProgress : quizProgresses) {
             if (quizProgress.getStatus().equals(QuizStatus.STARTED)) {
-                quiz = quizProgress.getQuiz();
+                Quiz quiz = quizProgress.getQuiz();
+                List<Question> passed = quizProgress.getPassedQuestions();
                 List<Question> questions = quiz.getQuestions();
                 for (Question question : questions) {
-                    if (question.getComplexity() < 3) {
+                    if (question.getComplexity() <= 3 && !passed.contains(question)) {
+                        //тут логика
+                        // нахождение сложности по пульсу
                         testQuestion = modelMapper.map(question, TestQuestion.class);
-                        testQuestion.setProgress(quizProgress.getId());
                     }
+                    testQuestion.setProgress(quizProgress.getId());
                 }
+                testQuestion.setQuizId(quiz.getId());
             }
         }
         return testQuestion;
@@ -81,23 +86,36 @@ public class TestService {
     public TestQuestion getQuestion(UserAnswerDto testAnswer) {//переделать
         // пришедшего ответа
         //тут добавлять в пасд
+        int quantityUserTrueAnswers=0;
+        int quantityQuestionTrueAnswers=0;
         TestQuestion testQuestion = new TestQuestion();
         QuizProgress quizProgress = quizProgressRepo.findById(testAnswer.getProgress()).get();
         Quiz  quiz = quizProgress.getQuiz();
         String testStatus="";
+        Question aQuestion=questionRepo.findById(testAnswer.getId()).get();
+
+        List<Answer> questionAnswers=aQuestion.getAnswers();
+        for (Answer questionAnswer:questionAnswers){
+            if (questionAnswer.isCorrect()){
+                quantityQuestionTrueAnswers++;
+            }
+        }
 
         List<ListAnswer> answers=testAnswer.getAnswers();
         List<Answer> userAnswers=new ArrayList<>();
-        for (ListAnswer userAnswer:answers){
+        for (ListAnswer userAnswer:answers){//проверить верные ли ответы, и совпадает ли их кол-во с правильными в вопросе
             Answer answer = answerRepo.findById(userAnswer.getId()).get();//тут чекаем трушность
-
             if (answer.isCorrect()) {//переделать логику верности ответа смотреть сколько правильных ответов
-                testStatus="true";
-            } else {
-                testStatus="false";
+                quantityUserTrueAnswers++;
             }
             userAnswers.add(answer);
         }
+        if (quantityUserTrueAnswers==quantityQuestionTrueAnswers&&quantityQuestionTrueAnswers==testAnswer.getAnswers().size()){
+            testStatus="true";
+            int grade=quizProgress.getGrade();
+            grade++;
+            quizProgress.setGrade(grade);
+        }else {testStatus="false";}
         quizProgress.getAnswers().addAll(userAnswers);
 
             Question passedQuestion=questionRepo.findById(testAnswer.getId()).get();

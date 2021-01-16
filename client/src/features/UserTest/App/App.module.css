@@ -1,12 +1,3 @@
-.UserTest {
-  outline: none;
-  background: white;
-  border-radius: 5px;
-  padding: 30px;
-  box-shadow: 0 0 4px #999;
-  margin: 20px;
-}
-
 .UserTest input:hover, label:hover {
  cursor: pointer;
 }
@@ -51,4 +42,37 @@
 .Loading {
   width: 64px;
   margin: calc((100vh - 64px) / 2) auto;
+}
+
+.UserTest {
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 4px #999;
+  margin: 20px;
+}
+
+.UserTestCorrect {
+  outline: none;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 4px #999;
+  margin: 20px;
+  background: #51ff1c;
+  pointer-events: none;
+}
+
+.UserTestWrong {
+  outline: none;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 4px #999;
+  margin: 20px;
+  background: #ff2020;
+  pointer-events: none;
+}
+
+.ButtonGoToNextQuestion {
+  pointer-events: all;
 }

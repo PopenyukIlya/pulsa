@@ -1,6 +1,7 @@
 package pulse.controller.API;
 
 import net.minidev.json.JSONObject;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -48,8 +49,8 @@ public class AuthController {
         }
 
         // Create new user's account
-        User user = new User(signUpRequest.getUsername(),
-                signUpRequest.getPassword());
+        User user = new User(signUpRequest.getUsername(),signUpRequest.getFirst_name(),signUpRequest.getLast_name(),signUpRequest.getMiddle_name(),signUpRequest.getBirth_date(),
+                signUpRequest.getAddress(),signUpRequest.getFaculty(),signUpRequest.getSpeciality(),signUpRequest.getCourse(),signUpRequest.getPassword());
 
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));

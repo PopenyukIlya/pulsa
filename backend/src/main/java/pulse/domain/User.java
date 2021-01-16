@@ -18,7 +18,7 @@ public class User implements UserDetails {
     private String first_name;
     private String last_name;
     private String middle_name;
-    private DateType birth_date;
+    private String birth_date;
     private String address;
     private String faculty;
     private String speciality;
@@ -34,6 +34,19 @@ public class User implements UserDetails {
     public User(String username, String password) {
     this.username=username;
     this.password=password;
+    }
+
+    public User(String username, String first_name, String last_name, String middle_name, String birth_date, String address, String faculty, String speciality, int course, String password) {
+        this.username = username;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.middle_name = middle_name;
+        this.birth_date = birth_date;
+        this.address = address;
+        this.faculty = faculty;
+        this.speciality = speciality;
+        this.course = course;
+        this.password = password;
     }
 
     public User() {
@@ -75,11 +88,11 @@ public class User implements UserDetails {
         this.middle_name = middle_name;
     }
 
-    public DateType getBirth_date() {
+    public String getBirth_date() {
         return birth_date;
     }
 
-    public void setBirth_date(DateType birth_date) {
+    public void setBirth_date(String birth_date) {
         this.birth_date = birth_date;
     }
 

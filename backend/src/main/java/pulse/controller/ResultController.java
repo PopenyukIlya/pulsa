@@ -1,11 +1,10 @@
 package pulse.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import pulse.controller.dto.ResultByQuizDto;
 import pulse.controller.dto.ResultDto;
 import pulse.domain.User;
 import pulse.service.ResultService;
@@ -23,5 +22,11 @@ public class ResultController {
     @GetMapping
     public List<ResultDto> results(@AuthenticationPrincipal User user) {
         return resultService.results(user);
+    }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    public List<ResultByQuizDto> resultByTest(@PathVariable(value = "id") Long id) {
+        return resultService.resultByTest(id);
     }
 }

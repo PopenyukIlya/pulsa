@@ -11,8 +11,10 @@ const App = props => {
   let { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [question, setQuestion] = useState(null);
-  const [userAnswer, setUserAnswer] = useState({id: null, progress: null, answers: []});
+  const [userAnswer, setUserAnswer] = useState({id: null, progress: null, answers: [], questionId: null});
   const [pulse, setPulse] = useState(null);
+  const [testStatus, setTestStatus] = useState(null);
+  const [nextQuestion, setNextQuestion] = useState(null)
 
   const getPulse = () => {
     axios.get("http://localhost:8080/api/pulse",
@@ -44,6 +46,7 @@ const App = props => {
       } else {
         setQuestion(res.data);
         setLoading(false);
+        console.log(question)
       }
     }).catch(err => {
       console.log(err);
@@ -56,36 +59,60 @@ const App = props => {
   }, []);
 
   const submit = () => {
+    
     setLoading(true);
-    setUserAnswer({id: null, progress: null, answers: []});
     axios.post("http://localhost:8080/api/test", userAnswer)
       .then(res => {
         if (res.data.error) {
+          console.log(question)
           alert(res.data.error)
         } else {
           if (res.data.testStatus.includes('passed')) {
             history.replace('/test_results/' + res.data.progress);
+            console.log(question)
           } else {
-            setQuestion(res.data);
+            
+            setTestStatus(res.data.testStatus == 'true');
+            setNextQuestion(res.data);
+            console.log(question)
             setLoading(false);
+
           }
         }
       }).catch((e) => {
         setLoading(false);
         console.log(e);
       })
+    setUserAnswer({id: null, progress: null, answers: []});
+  }
+
+  const goToNextQuestion = () => {
+    console.log(nextQuestion)
+    setQuestion(nextQuestion)
+    setTestStatus(null);
+    setNextQuestion(null);
   }
 
   return (
     <div>
+      {console.log(question)}
       {(!loading) ?
-      <div className={classes.UserTest}>
+      <div className={
+        testStatus === true ?
+          classes.UserTestCorrect :
+          testStatus === null ?
+            classes.UserTest :
+            classes.UserTestWrong
+      }>
         <h1>{question.text}</h1>
         <hr />
           <div>
             {question.answers.map(answer =>
               { return (
-                <div key={answer.id} className={classes.Answer}>
+                <div
+                  key={answer.id}
+                  className={classes.Answer}
+                >
                   <input
                     name="answer"
                     type="checkbox"
@@ -98,7 +125,12 @@ const App = props => {
                 </div>
               )}
             )}
-            <Button onClick={submit} disabled={!userAnswer?.answers.length > 0}>Submit</Button>
+            { nextQuestion === null ? 
+              <Button onClick={submit} disabled={!userAnswer?.answers.length > 0}>Submit</Button> :
+              <Button className={classes.ButtonGoToNextQuestion} onClick={goToNextQuestion} >Go Next</Button> 
+
+            }
+            
             {/* <p>{pulse}</p> */}
           </div>
       </div> :
