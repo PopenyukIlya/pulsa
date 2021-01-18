@@ -9,7 +9,7 @@ import pulse.controller.dto.UserAnswerDto;
 import pulse.domain.User;
 import pulse.service.test.TestService;
 
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "https://pacific-fjord-28473.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/test")
 public class TestController {

@@ -22,7 +22,7 @@ import java.util.Collections;
 import java.util.Set;
 
 
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "https://pacific-fjord-28473.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

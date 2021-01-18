@@ -7,7 +7,7 @@ import pulse.domain.repos.PulseRepo;
 
 import java.util.Random;
 
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "https://pacific-fjord-28473.herokuapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/pulse")
 public class PulseController {
