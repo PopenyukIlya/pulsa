@@ -7,7 +7,7 @@ import authHeader from "../../../service/auth-header";
 import { useHistory } from "react-router-dom";
 
 const CreateTestModal = props => {
-  const [name, setName] = useState(null);
+  const [name, setName] = useState('');
   let history = useHistory();
 
   const submitCreateTest = () => {

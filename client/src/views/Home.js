@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import {Alert} from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import axios from 'axios';
 
 function Home() {

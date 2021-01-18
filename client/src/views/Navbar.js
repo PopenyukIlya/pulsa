@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Alert,Button,ButtonGroup,Nav,Navbar} from "react-bootstrap";
+import { Button, ButtonGroup, Nav, Navbar } from "react-bootstrap";
 import { Redirect } from 'react-router-dom';
 import { useAuth } from "../context/AuthContext";
 import { useHistory } from "react-router-dom";
@@ -31,25 +31,28 @@ function NavBar() {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand onClick={() => history.push('/')}>Pulse</Navbar.Brand>
+        <Navbar.Brand style={{ cursor: "pointer" }} onClick={() => history.push('/')}>Pulse</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link onClick={() => history.push('/')}>Main</Nav.Link>
-               
-                { 
-                    store ? getStore().roles.includes("USER") || getStore().roles.includes("ADMIN") ?
-                        <Nav.Link onClick={() => history.push('/results')}>Results</Nav.Link> : 
+                
+                {store ? getStore().roles.includes("USER") || getStore().roles.includes("ADMIN") ?
+                    <Nav.Link onClick={() => history.push('/')}>Main</Nav.Link> : 
+                        null : null
+                }   
+
+                {store ? getStore().roles.includes("USER") || getStore().roles.includes("ADMIN") ?
+                    <Nav.Link onClick={() => history.push('/results')}>Results</Nav.Link> : 
                         null : null
                 }   
                   { store ?
-                    JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link href="/profile">Profile</Nav.Link> : null
+                    JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link onClick={() => history.push('/profile')}>Profile</Nav.Link> : null
                     :
                     null
                 }
                 
                 { store ?
-                    JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link href="/admin">Admin</Nav.Link> : null
+                    JSON.parse(localStorage.getItem("user")).roles.includes("ADMIN") ? <Nav.Link onClick={() => history.push('/admin')}>Admin</Nav.Link> : null
                     :
                     null
                 }       

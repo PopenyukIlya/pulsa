@@ -11,15 +11,44 @@ import UserTest from './features/UserTest';
 import TestResults from './features/TestResults';
 import EditTest from './features/EditTest';
 import IndexPage from './features/IndexPage';
-
+import Students from './features/Students';
+import Trees from './features/svg/Trees/Trees';
 import NavBar from "./views/Navbar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Alert, Button, ButtonGroup, Nav, Navbar } from "react-bootstrap";
 import { AuthContext } from "./context/AuthContext";
-import Trees from './features/svg/Trees/Trees';
+import authHeader from "./service/auth-header";
+import { useHistory } from "react-router-dom";
+import axios from 'axios';
 
 const App = () => {
   const [user, setUser] = useState('');
+  let history = useHistory();
+
+  useEffect(() => {
+    history.listen((location, action) => {
+      console.log(JSON.parse(localStorage.getItem('user')) && !location.pathname.includes('user_test'))
+      if (JSON.parse(localStorage.getItem('user')) && !location.pathname.includes('user_test')) {
+        axios.get("http://localhost:8080/api/test",
+          {headers: authHeader()}
+        ).then(res => {
+          if (res.data.quizId) {
+            history.replace('/user_test/' + res.data.quizId);
+          }
+        })
+      }
+    });
+
+    if (JSON.parse(localStorage.getItem('user'))) {
+      axios.get("http://localhost:8080/api/test",
+        {headers: authHeader()}
+      ).then(res => {
+        if (res.data.quizId) {
+          history.replace('/user_test/' + res.data.quizId);
+        }
+      })
+    }
+  }, [])
 
   return (
     <div>
@@ -37,6 +66,9 @@ const App = () => {
           </Route>
           <Route path="/edit_test/:id">
             <EditTest />
+          </Route>
+          <Route path="/students/:id">
+            <Students />
           </Route>
           <Route exact path="/results" component={Results}/>
           <Route exact path="/admin" component={Admin}/>

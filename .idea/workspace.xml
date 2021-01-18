@@ -22,27 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="added test results">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/ResultByQuizDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="9ed9857d-6574-4d21-934d-39de90f036d5" name="Default Changelist" comment="added results by test,watching started tests,  new sign up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/API/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/ResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/ResultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/test/TestQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/dto/test/TestQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/QuizCreateEditDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/controller/test/QuizCreateEditDeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuestionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuestionRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuizProgressRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/domain/repos/QuizProgressRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/payload/request/SignupRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/ResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/controller/API/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/IndexPage/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/IndexPage/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/UserTest/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/UserTest/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/UserTest/App/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/UserTest/App/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/pulse/payload/request/SignupRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/client/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/IndexPage/CreateTestModal/CreateTestModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/IndexPage/CreateTestModal/CreateTestModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,17 +109,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pulse" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pulse.Application" />
@@ -211,7 +192,9 @@
       <workItem from="1610310362999" duration="3008000" />
       <workItem from="1610353755067" duration="11000" />
       <workItem from="1610737738764" duration="6545000" />
-      <workItem from="1610817280662" duration="15989000" />
+      <workItem from="1610817280662" duration="16689000" />
+      <workItem from="1610956923446" duration="526000" />
+      <workItem from="1610975118636" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="added: EditUserController,QuizCreateEditDeleteController and services&#10;for them">
       <created>1603177796632</created>
@@ -255,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610293244566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added results by test,watching started tests,  new sign up">
+      <created>1610836306984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610836306985</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +273,8 @@
     <MESSAGE value="big refactor" />
     <MESSAGE value="added test progress" />
     <MESSAGE value="added test results" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test results" />
+    <MESSAGE value="added results by test,watching started tests,  new sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="added results by test,watching started tests,  new sign up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="-902" key="#Project_Structure" timestamp="1603738720910">
@@ -294,11 +285,12 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="690" y="-806" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610289935897" />
-    <state x="451" y="-992" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610311416045">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610975861899">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="451" y="-992" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610311416045" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609790223220" />
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610975861899" />
     <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609825437968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -345,76 +337,76 @@
     <state x="740" y="-806" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1609825828701" />
     <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609824821897" />
     <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604476981493" />
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1610835159615">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.0.bottom" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159615" />
+    <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675665" />
     <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
-    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1610835159615">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.0.center" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159615" />
+    <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675665" />
     <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664221" />
-    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1610835159615">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.0.left" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159615" />
+    <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675665" />
     <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664221" />
-    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1610835159615">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.0.right" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159615" />
+    <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675665" />
     <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
-    <state width="1877" height="185" key="GridCell.Tab.1.bottom" timestamp="1610835173760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.1.bottom" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835173760" />
+    <state width="1877" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="150" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
-    <state width="1877" height="185" key="GridCell.Tab.1.center" timestamp="1610835173760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.1.center" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835173760" />
+    <state width="1877" height="286" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="150" key="GridCell.Tab.1.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
-    <state width="1877" height="185" key="GridCell.Tab.1.left" timestamp="1610835173759">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.1.left" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835173759" />
+    <state width="1877" height="286" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675665" />
     <state width="1493" height="150" key="GridCell.Tab.1.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664222" />
-    <state width="1877" height="185" key="GridCell.Tab.1.right" timestamp="1610835173760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1493" height="438" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1493" height="438" key="GridCell.Tab.1.right" timestamp="1610962188121">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835173760" />
+    <state width="1877" height="286" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="150" key="GridCell.Tab.1.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1610207865040" />
-    <state width="1493" height="55" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
-    <state width="1877" height="185" key="GridCell.Tab.2.bottom" timestamp="1610835159364">
+    <state width="1493" height="438" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610962188121" />
+    <state width="1877" height="286" key="GridCell.Tab.2.bottom" timestamp="1610836675666">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159364" />
+    <state width="1877" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="86" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609699421898" />
     <state width="1493" height="55" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609016664224" />
-    <state width="1877" height="185" key="GridCell.Tab.2.center" timestamp="1610835159363">
+    <state width="1877" height="286" key="GridCell.Tab.2.center" timestamp="1610836675666">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159363" />
+    <state width="1877" height="286" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="86" key="GridCell.Tab.2.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609699421898" />
     <state width="1493" height="55" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
-    <state width="1877" height="185" key="GridCell.Tab.2.left" timestamp="1610835159363">
+    <state width="1877" height="286" key="GridCell.Tab.2.left" timestamp="1610836675666">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159363" />
+    <state width="1877" height="286" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="86" key="GridCell.Tab.2.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609699421898" />
     <state width="1493" height="55" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1609016664223" />
-    <state width="1877" height="185" key="GridCell.Tab.2.right" timestamp="1610835159364">
+    <state width="1877" height="286" key="GridCell.Tab.2.right" timestamp="1610836675666">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610835159364" />
+    <state width="1877" height="286" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836675666" />
     <state width="1493" height="86" key="GridCell.Tab.2.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1609699421898" />
     <state width="1493" height="55" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1609016664224" />
     <state x="490" y="-906" key="Maven.ArtifactSearchDialog" timestamp="1603738637543">
@@ -425,10 +417,10 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="461" y="-918" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1604159053302" />
-    <state x="451" y="-897" key="Vcs.Push.Dialog.v2" timestamp="1610293246253">
+    <state x="451" y="-897" key="Vcs.Push.Dialog.v2" timestamp="1610836315935">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="451" y="-897" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610293246253" />
+    <state x="451" y="-897" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836315935" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1603177799945" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604470554503" />
     <state x="668" y="271" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609789583737">
@@ -454,10 +446,10 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="92" y="-988" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610310934208" />
-    <state x="513" y="-832" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1610286673351">
+    <state x="513" y="-832" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1610836003868">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="513" y="-832" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610286673351" />
+    <state x="513" y="-832" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1610836003868" />
     <state x="667" y="-827" width="881" height="534" key="find.popup" timestamp="1610817515399">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
@@ -470,75 +462,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/admin/EditDeleteUserService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>124</line>
-          <option name="timeStamp" value="74" />
+          <line>106</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
           <line>110</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/pulse/service/test/TestService.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="90" />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -87,19 +87,12 @@ public class TestService {
         // пришедшего ответа
         //тут добавлять в пасд
         int quantityUserTrueAnswers=0;
-        int quantityQuestionTrueAnswers=0;
         TestQuestion testQuestion = new TestQuestion();
         QuizProgress quizProgress = quizProgressRepo.findById(testAnswer.getProgress()).get();
         Quiz  quiz = quizProgress.getQuiz();
         String testStatus="";
         Question aQuestion=questionRepo.findById(testAnswer.getId()).get();
 
-        List<Answer> questionAnswers=aQuestion.getAnswers();
-        for (Answer questionAnswer:questionAnswers){
-            if (questionAnswer.isCorrect()){
-                quantityQuestionTrueAnswers++;
-            }
-        }
 
         List<ListAnswer> answers=testAnswer.getAnswers();
         List<Answer> userAnswers=new ArrayList<>();
@@ -110,7 +103,7 @@ public class TestService {
             }
             userAnswers.add(answer);
         }
-        if (quantityUserTrueAnswers==quantityQuestionTrueAnswers&&quantityQuestionTrueAnswers==testAnswer.getAnswers().size()){
+        if (quantityUserTrueAnswers==testAnswer.getAnswers().size()){
             testStatus="true";
             int grade=quizProgress.getGrade();
             grade++;

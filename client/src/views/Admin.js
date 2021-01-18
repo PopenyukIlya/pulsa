@@ -5,17 +5,15 @@ import axios from 'axios';
 import BootstrapTable from 'react-bootstrap-table-next';
 import {Button, Dropdown} from "react-bootstrap";
 
-function Admin() {
+const Admin = () => {
     const [data, setData] = useState([]);
     const [checked, setChecked] = useState([]);
 
     useEffect(() => {
         axios.get("http://localhost:8080/api/admin/useredit",
-            {headers: authHeader()}).then(result => {
-                setData(result.data);
-        }).catch(e => {
-            console.log(e)
-        });
+            {headers: authHeader()})
+        .then(res => setData(res.data))
+        .catch(e => console.log(e));
     }, []);
 
     const columns = [{
@@ -61,35 +59,29 @@ function Admin() {
         }
       };
      
-      axios.get("http://localhost:8080/api/admin/quizedit",
-      {headers: authHeader()}).then(result => {
-        console.log(result);
-  }).catch(e => {
-    console.log(e)
-  });
+    axios.get("http://localhost:8080/api/admin/quizedit",
+        {headers: authHeader()})
+    .then(result => console.log(result))
+    .catch(e => console.log(e));
 
-
-    function doChange(newrole) {
+    const doChange = (newrole) => {
         console.log({newrole,checked});
-        axios.post("http://localhost:8080/api/admin/useredit",{newrole,checked},
-        {headers: authHeader()}).then(response => {
-                if (response.status == 200) {
-                    
-                    console.log(response);
+        axios.post("http://localhost:8080/api/admin/useredit", 
+            { newrole, checked }, { headers: authHeader() })
+        .then(res => {
+                if (res.status == 200) {
+                    setData(res.data);
                 } else {
                     console.log('No success, as usual. Fuck this shit?');
                 }
-        }).catch(e => {
-          console.log(e)
-        });
+        }).catch(e => console.log(e));
     }
 
     return (
         <div>
-
             <h1>Users Table</h1>
             <div>
-                <Dropdown>
+                <Dropdown className="m-1">
                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                         Change selected users roles to ..
                     </Dropdown.Toggle>
@@ -115,7 +107,6 @@ function Admin() {
                     />
                 : <p className="mt-3">WTF. How is there no users?!</p> }
             </div>
-
         </div>
     );
 }
