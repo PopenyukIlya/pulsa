@@ -23,12 +23,11 @@ public class PulseController {
         return randomNum;
     }
 
-    @GetMapping("/{pulse}")
-    public void save(@PathVariable("pulse") int id) {
-        pulseRepo.deleteAll();
-        Pulse pulse = new Pulse();
-        pulse.setPulse(id);
-        pulseRepo.save(pulse);
+    @GetMapping("/push")
+    public void save(@RequestParam int pulse) {
+        Pulse puls = new Pulse();
+        puls.setPulse(pulse);
+        pulseRepo.save(puls);
     }
 
 }
